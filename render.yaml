@@ -1,7 +1,8 @@
 services:
   - type: web
     name: openclaw
-    runtime: docker
+    runtime: image
+    image: alpine/openclaw:lastest
     plan: free
     healthCheckPath: /health
     envVars:
